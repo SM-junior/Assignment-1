@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,11 @@ h3{
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 550;
 }
 p{
     font-family: 'Work Sans', sans-serif;
@@ -29,33 +35,80 @@ img{
 /* -----------------header----------------- */
 
 .header-content{
-   position: relative;
-}
-.title{
+    position: relative;
+ }
+ .header-title{
+     position: absolute;
+     display: block;
+     top: 200px;
+     right: 0;
+     padding: 0 120px 200px 700px;
+     text-align: right;
+ }
+ .header-title h1{
+     padding: 0 0 0 120px;
+ }
+ .header-title p{
+     margin-top: 20px;
+     padding: 0 0 0 150px;
+     color:black;
+ }
+ .btn{
+     padding: 15px 30px;
+     background-color: #DF6537;
+     border: 0;
+     border-radius: 5px;
+     margin-top: 20px;
+     font-family: 'Work Sans', sans-serif;
+     font-weight: 600;
+     color: white;
+     letter-spacing: 1px;
+ }
+/* -----------------navbar----------------- */
+
+.navbar{
     position: absolute;
-    display: block;
-    top: 200px;
-    right: 0;
-    padding: 0 160px 200px 700px;
-    text-align: right;
+    top: 10px;
+    left: 50px;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.title h1{
-    padding: 0 0 0 120px;
+.navbar ul{
+    display: flex;
+    align-items: center;
 }
-.title p{
-    margin-top: 20px;
-    color:black;
+.navbar ul li a{
+    padding: 5px 20px;
+    color: black;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgb(71, 68, 68);
 }
-.btn{
-    padding: 15px 30px;
+.navbar ul li a:hover{
     background-color: #DF6537;
-    border: 0;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
+    padding: 5px 20px;
     color: white;
-    letter-spacing: 1px;
+}
+.navbar ul input{
+    padding: 0 10px;
+    border: 1px solid #fefef5;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 2px 2px 10px black;
+}
+.nav-logo h2{
+    font-size: 70px;
+    font-family: 'Black Ops One', cursive;
+}
+.nav-magnify{
+    padding: 6px 10px;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    border: 0;
+    box-shadow: 2px 2px 10px black;
 }
 /* -----------------section-1----------------- */
 
@@ -73,12 +126,12 @@ img{
 }
 .person-bg{
     position: absolute;
-    width: 356px;
-    height: 356px;
+    width: 530px;
+    height: 530px;
     border-radius: 50%;
     background-color: #F7DFD5;
-    top: 264px;
-    left: 247px;
+    top: 195px;
+    left: 120px;
 }
 .image{
     width: 100%;
@@ -96,6 +149,9 @@ img{
 .my-failure ul{
     margin-left: 80px;
     padding: 10px 100px 0 100px;
+}
+.my-failure ul li i{
+    color: #64D58E;
 }
 /* -----------------section-2----------------- */
 
@@ -172,8 +228,8 @@ img{
     font-weight: 400;
     font-size: 20px;
 }
-
 /* -----------------footer----------------- */
+
 .footer{
     background-color: black;
 }
@@ -207,6 +263,14 @@ img{
     margin-top: 20px;
     border-radius: 5px;
     background-color: black;
+}
+.form-btn{
+    padding: 13px 30px;
+    color: #DF6537;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 0;
 }
 
 
